@@ -1,0 +1,27 @@
+{
+  "name": "InsiArt",
+  "version": "1.0.0",
+  "description": "An application for discovering new artists, art styles and art pieces based on searches!",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RitzGL/insiart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RitzGL/insiart/issues"
+  },
+  "homepage": "https://github.com/RitzGL/insiart#readme",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
