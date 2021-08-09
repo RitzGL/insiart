@@ -1,4 +1,6 @@
 import React from "react";
+import Button from '../Button'
+import { Link } from "react-router-dom";
 import "./styles.css";
 function About() {
   return (
@@ -15,6 +17,8 @@ function About() {
       </p>
       <br />
       <p>Sound good? We thought so, too.</p>
+      <br />
+      <Link to="/signup"><Button /></Link>
     </article>
   );
 }
