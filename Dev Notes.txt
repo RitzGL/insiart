@@ -1,0 +1,12 @@
+TODAY'S NOTES:
+
+COMPONENTS
+	FOOTER
+		This gets styled weird when a form is added. 
+		Must be because of position:absolute. If cannot fix, just delete footer.
+
+	FORM - Signup
+		Form could contain: Fave Artist as a reference to recomment art to a user.
+		OR
+		Form could contain drop down menu with options attained from hitting the
+		API, and returning available departments returned to us.

@@ -19,6 +19,9 @@ function Header() {
           <a href="/">Search Time Periods</a>
         </li>
         <li>
+          <a href="/">Your Suggestions</a>
+        </li>
+        <li>
           <a href="/" onClick={logout}>
             Logout
           </a>

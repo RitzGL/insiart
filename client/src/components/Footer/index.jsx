@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.css";
 
+// Footer gets styled weirdly when the form gets added
+
 function Footer() {
   return (
     <footer>
