@@ -1,0 +1,36 @@
+header{
+    display: inline-flex;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+header > h2{
+    display: inline-flex;
+    margin-block-start: 0.35em;
+    margin-block-end: 0.35em;
+    margin-left: 0.5rem;
+}
+
+header > ul > li{
+    display:inline-flex;
+    list-style-type: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+header > ul > li > a:visited{
+    color: black;
+}
+
+header > ul > li > a{
+    text-decoration: none;
+}
+
+header > ul > li > a:hover{
+    text-decoration: solid;
+}
+
+header > ul{
+    align-self: flex-end;
+}

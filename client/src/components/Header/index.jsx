@@ -2,28 +2,25 @@ import React from "react";
 import "./styles.css";
 
 function Header() {
-  function logout() {
-    // template for logout function
+  function login() {
+    // template for login function
+  }
+  function signup() {
+    // template for signup function
+    // will change state to render signup page
   }
   return (
     <header>
       <h2>InsiArt</h2>
       <ul>
         <li>
-          <a href="/">Search Artists</a>
+          <a href="/" onClick={signup}>
+            Signup
+          </a>
         </li>
         <li>
-          <a href="/">Search Pieces</a>
-        </li>
-        <li>
-          <a href="/">Search Time Periods</a>
-        </li>
-        <li>
-          <a href="/">Your Suggestions</a>
-        </li>
-        <li>
-          <a href="/" onClick={logout}>
-            Logout
+          <a href="/" onClick={login}>
+            Login
           </a>
         </li>
       </ul>

@@ -15,9 +15,9 @@ function SignupForm() {
 
   return (
     <section>
-        <h3>Signup</h3>
-        <p>Discover, explore and browse art.</p>
-        <br />
+      <h3>Signup</h3>
+      <p>Discover, explore and browse art.</p>
+      <br />
       <form onSubmit={submitForm}>
         <label htmlFor="name">Username:</label>
         <input type="text" id="name" name="name" />

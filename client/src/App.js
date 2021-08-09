@@ -1,13 +1,10 @@
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import SignupForm from './components/Forms/SignupForm';
-import LoginForm from './components/Forms/LoginForm';
+import LandingPage from './Pages/LandingPage';
+// import LoginPage from './Pages/LoginPage';
 function App() {
   return (<>
-    <Header />
-    <LoginForm />
-    <SignupForm />
+    <LandingPage />
+    {/* <LoginPage /> */}
     </>
   );
 }
