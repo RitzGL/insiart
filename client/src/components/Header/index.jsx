@@ -1,27 +1,27 @@
 import React from "react";
 import "./styles.css";
-
+import { Link } from "react-router-dom";
 function Header() {
-  function login() {
-    // template for login function
-  }
-  function signup() {
-    // template for signup function
-    // will change state to render signup page
-  }
+  // function login() {
+  //   // template for login function
+  // }
+  // function signup() {
+  //   // template for signup function
+  //   // will change state to render signup page
+  // }
   return (
     <header>
-      <h2>InsiArt</h2>
+      <h2>
+        <Link className="Name" to="/">
+          InsiArt
+        </Link>
+      </h2>
       <ul>
         <li>
-          <a href="/" onClick={signup}>
-            Signup
-          </a>
+          <Link to="/signup">Signup</Link>
         </li>
         <li>
-          <a href="/" onClick={login}>
-            Login
-          </a>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
     </header>
