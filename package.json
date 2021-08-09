@@ -1,5 +1,5 @@
 {
-  "name": "InsiArt",
+  "name": "insiart",
   "version": "1.0.0",
   "description": "An application for discovering new artists, art styles and art pieces based on searches!",
   "main": "server/server.js",
