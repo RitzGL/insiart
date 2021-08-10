@@ -10,3 +10,5 @@ COMPONENTS
 		OR
 		Form could contain drop down menu with options attained from hitting the
 		API, and returning available departments returned to us.
+
+https://github.com/mars/create-react-app-buildpack.git - webpack builder thingo
