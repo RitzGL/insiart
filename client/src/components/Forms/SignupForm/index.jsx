@@ -2,9 +2,11 @@ import React from "react";
 import "./styles.css";
 
 function SignupForm() {
-  function submitForm() {
+  function handleFormSubmitEvent(e) {
+    if (e.onKeyPress === 'Enter') console.log(e.target.value);
     // request to the server, containing all the information
     // server then creates the user, and adds to database
+    
   }
   //   OPTIONAL: DEPENDENT ON HOW DEVELOPMENT IS GOING
   //   function getOptionsByDepartment() {
@@ -18,7 +20,7 @@ function SignupForm() {
       <h3>Signup</h3>
       <p>Discover, explore and browse art.</p>
       <br />
-      <form onSubmit={submitForm}>
+      <form onKeyPress={(e) => {handleFormSubmitEvent(e)}}>
         <label htmlFor="name">Username:</label>
         <input type="text" id="name" name="name" />
 
