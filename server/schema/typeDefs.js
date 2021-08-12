@@ -4,20 +4,37 @@ const { gql } = require('apollo-server-express');
 // that together define the "shape" of queries that are executed against
 // your data.
 const typeDefs = gql`
-  # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
-
-  # This "Book" type defines the queryable fields for every book in our data source.
-  type Book {
-    title: String
-    author: String
+  
+  type User {
+    username: String
+    faveArtist: String
+    email: String
+    password: String
+    collection: [Piece]
   }
 
-  # The "Query" type is special: it lists all of the available queries that
-  # clients can execute, along with the return type for each. In this
-  # case, the "books" query returns an array of zero or more Books (defined above).
+  type Piece{
+    name: String
+    artistName: String
+    description: String
+    imgUrl: String
+    year: String
+    style: String
+  }
+  
   type Query {
-    books: [Book]
+    users: [User]
+    user(username: String): User
+    piece: [Piece]
   }
+
+  type Mutation {
+    addUser(username: String!, faveArtist: String!, email: String!, password: String!): User
+    setPiece(name: String!, artistName: String!, description: String!, imgUrl: String!, year: String!, style:String!): Piece
+  }
+
+  
+
 `;
 
 module.exports = typeDefs;
