@@ -1,6 +1,10 @@
 import React from "react";
 import "./styles.css";
 
+// install apollo client
+// import the hook to run mutations
+// write logic that will create a user with the information derived from the form
+
 function SignupForm() {
   function submitForm() {
     // request to the server, containing all the information
