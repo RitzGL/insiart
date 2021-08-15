@@ -45,7 +45,7 @@ function SignupForm() {
 
       Auth.login(data.addUser.token);
     } catch (e) {
-      console.error(e);
+      console.error(e.message);
     }
   };
 
@@ -54,7 +54,7 @@ function SignupForm() {
       <h3>Signup</h3>
       <p>Discover, explore and browse art.</p>
       <br />
-      <form onSubmit={handleFormSubmit}>
+      <form onSubmit={(event)=>{handleFormSubmit(event)}}>
         <label htmlFor="name">Username:</label>
         <input
           type="text"
