@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sunflowers",
+    "artistName": "Vincent Van Gogh",
+    "description": "Series of paintings depicting flowers",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Vincent_van_Gogh_-_Sunflowers_-_VGM_F458.jpg",
+    "year": "1889",
+    "style": "Expressionism"
+  },
+  {
+    "name": "The Son of Man",
+    "artistName": "Rene Magritte",
+    "description": "The painting consists of a man in an overcoat and a bowler hat standing in front of a short wall, beyond which is the sea and a cloudy sky. The man's face is largely obscured by a hovering green apple.",
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/en/e/e5/Magritte_TheSonOfMan.jpg",
+    "year": "1964",
+    "style": "Surrealism"
+  },
+  {
+    "name": "The Elephants",
+    "artistName": "Salvador Dali",
+    "description": "These elephants represent the future and are also a symbol of strength. ",
+    "imgUrl": "https://en.wikipedia.org/wiki/The_Elephants#/media/File:Dali_Elephants.jpg",
+    "year": "1948",
+    "style": "Surrealism"
+  }
+]

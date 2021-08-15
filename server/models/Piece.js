@@ -1,5 +1,8 @@
 const {  Schema, model } = require('mongoose');
 
+// Perhaps adding pieces will be part of release 2
+// the data structure may look different. 
+
 const pieceSchema = new Schema({
     name:{
         type: String,
@@ -9,28 +12,28 @@ const pieceSchema = new Schema({
     artistName:{
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     description:{
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     imgUrl:{
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     year:{
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
-    style:{
+    style: {
         type: String,
         required: true,
-        unique: true
-    },
+        unique: false
+    }
 })
 
 const Piece = model('Piece', pieceSchema);

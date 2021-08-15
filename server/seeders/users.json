@@ -1,0 +1,29 @@
+[
+    {
+        "username": "Ritz",
+        "faveArtist": "Vincent Van Gogh",
+        "email": "email@email.com",
+        "password": "password",
+        "artCollection": [
+            "Sunflowers"
+        ]
+    },
+    {
+        "username": "Yuri",
+        "faveArtist": "Rene Magritte",
+        "email": "emaill@email.com",
+        "password": "passwords",
+        "artCollection": [
+            "The Son of Man"
+        ]
+    },
+    {
+        "username": "Tristan",
+        "faveArtist": "Salvador Dali",
+        "email": "emailll@email.com",
+        "password": "passwordsss",
+        "artCollection": [
+            "The Elephants"
+        ]
+    }
+]

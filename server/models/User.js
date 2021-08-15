@@ -1,4 +1,7 @@
 const {  Schema, model } = require('mongoose');
+const { Piece } = require('./Piece');
+// Have to search user by email
+
 
 const userSchema = new Schema({
     username:{
@@ -9,7 +12,7 @@ const userSchema = new Schema({
     faveArtist:{
         type: String,
         required: true,
-        unique: true
+        unique: false
     },
     email:{
         type: String,
@@ -19,8 +22,12 @@ const userSchema = new Schema({
     password:{
         type: String,
         required: true,
-        unique: true
-    }
+        unique: false
+    },
+    artCollection:[ {
+        type: Schema.Types.ObjectId,
+        ref: Piece
+    }]
 })
 
 const User = model('User', userSchema);
