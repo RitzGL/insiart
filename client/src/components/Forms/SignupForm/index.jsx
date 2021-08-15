@@ -37,11 +37,11 @@ function SignupForm() {
     console.log(formState);
 
     try {
-      const { data } = await addUser({
+      const { data } = await addUser({ // unable to see data in here
         variables: { ...formState },
       });
 
-      console.log("Data obtained from addUser", data)
+      console.log("Data obtained from addUser", data) // not executing
 
       Auth.login(data.addUser.token);
     } catch (e) {

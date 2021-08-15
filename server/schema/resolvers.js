@@ -16,6 +16,7 @@ const resolvers = {
   // these will change the database by creating or deleting documents
   Mutation: {
     addUser: async (parent, { username, faveArtist, email, password }) => {
+      console.log("Beginning addUser Mutation invokation")
       const user = await User.create({ username, faveArtist, email, password });
       console.log("Awaited user received, user data is: ", user);
       const token = signToken(user);
