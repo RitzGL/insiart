@@ -26,9 +26,14 @@ function Main(){
             // construct
     return(
         <>
-            <h2>Welcome back, logged in user!</h2>
+            <h1>Welcome, user!</h1>
             <main>
-
+                <h3>Work in progress</h3>
+                <p>We are still in development.</p>
+                <br />
+                <p>Check back with us soon for the full experience!</p>
+                <br />
+                <p>Browse with the navigation bar to see what exciting new features will be added soon!</p>
             </main>
         </>
     )

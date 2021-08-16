@@ -1,28 +1,32 @@
 import React from "react";
 import "./styles.css";
+import { Link } from "react-router-dom"; 
+
+import authService from '../../utils/auth'
 
 function Header() {
   function logout() {
-    // template for logout function
+    authService.logout();
+    alert("You have been successfully logged out!")
   }
   return (
     <header>
       <h2>InsiArt</h2>
       <ul>
         <li>
-          <a href="/">Search Artists</a>
+          <Link to="/homepage/search-artist">Search Artists</Link>
         </li>
         <li>
-          <a href="/">Search Pieces</a>
+          <a href="/homepage/search-pieces">Search Pieces</a>
         </li>
         <li>
-          <a href="/">Search Time Periods</a>
+          <a href="/homepage/search-time-periods">Search Time Periods</a>
         </li>
         <li>
-          <a href="/">Your Suggestions</a>
+          <a href="/homepage/suggestions">Your Suggestions</a>
         </li>
         <li>
-          <a href="/" onClick={logout}>
+          <a href="/login" onClick={logout}>
             Logout
           </a>
         </li>

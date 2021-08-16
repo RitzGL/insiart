@@ -32,7 +32,7 @@ function SignupForm() {
   };
 
   // submit form
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = async (event, error) => {
     event.preventDefault();
     console.log(formState);
 
@@ -44,8 +44,8 @@ function SignupForm() {
       console.log("Data obtained from addUser", data) // not executing
 
       Auth.login(data.addUser.token);
-    } catch (e) {
-      console.error(e.message);
+    } catch (error) {
+      console.error(error.message);
     }
   };
 
