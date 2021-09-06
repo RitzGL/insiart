@@ -32,6 +32,7 @@ const typeDefs = gql`
     users: [User]
     user(username: String): User
     piece: [Piece]
+    searchByTerm: String
   }
 
   type Mutation {
@@ -40,7 +41,7 @@ const typeDefs = gql`
     setPiece(name: String!, artistName: String!, description: String!, imgUrl: String!, year: String!, style:String!): Piece
   }
 
-  
+
 
 `;
 

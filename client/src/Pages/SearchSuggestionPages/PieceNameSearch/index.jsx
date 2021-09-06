@@ -1,14 +1,17 @@
 import React from "react";
 import { useState } from "react";
 import { Redirect } from "react-router";
+import { useQuery } from "@apollo/client"
 import HomeHeader from "../../../components/HomeHeader";
 import authService from "../../../utils/auth"
 
 import "./styles.css";
 
 function PieceNameSearchPage() {
+  // const { loading, data } = useQuery(GET_RESPONSE_FROM_EXTERNAL_API);
+  // const response = data?.response;
   const [searchForm, setSearchForm] = useState({
-    artistName: "",
+    pieceName: "",
   });
 
   const token = authService.getToken();
@@ -40,7 +43,7 @@ function PieceNameSearchPage() {
           <input
             type="text"
             name="artistName"
-            value={searchForm.artistName}
+            value={searchForm.pieceName}
             onChange={handleFormChange}
           />
         </form>

@@ -12,6 +12,10 @@ const resolvers = {
       
       return User.findOne({ username: username });
     },
+    searchByTerm: async () => {
+      const response = await fetch("externalURL");
+      return await response.json();
+    },
   },
   // these will change the database by creating or deleting documents
   Mutation: {
@@ -24,7 +28,6 @@ const resolvers = {
       return { token, user };
     },
     // login
-    // JWT bullshit goes in here as well
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
 
